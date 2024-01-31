@@ -11,10 +11,10 @@ from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-JSON_FILE_PATH = os.path.join(BASE_DIR, "otic-wallet-firebase-adminsdk-6a1ri-36aa34f573.json")
+JSON_FILE_PATH = os.path.join(BASE_DIR, "carloan-flutter-project-firebase-adminsdk-8qbzl-d27a6baec3.json")
 cred = credentials.Certificate(JSON_FILE_PATH)
 try:
- firebase_admin.initialize_app(cred,options={'authDomain': 'http://localhost:8000'})
+ firebase_admin.initialize_app(cred)
  db = firestore.client()
 except Exception as e:
    print(e) 
