@@ -21,4 +21,4 @@ jobs:
       with:
         file: ./tlp/Dockerfile
         push: true
-        tags: mugumbyabenon/techleap-backend:latest 
+        tags: mugumbyabenon/techleap-back:latest 
