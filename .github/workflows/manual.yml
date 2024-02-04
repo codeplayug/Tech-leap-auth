@@ -1,0 +1,24 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Configure Docker
+      run: |
+       docker logout
+       docker login --username=mugumbyabenon --password=@Kibuuka1  
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+        file: ./tlp/Dockerfile
+        push: true
+        tags: mugumbyabenon/techleap-backend:latest 
