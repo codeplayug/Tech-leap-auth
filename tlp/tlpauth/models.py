@@ -11,4 +11,5 @@ class User(AbstractUser):
     gender = models.CharField(max_length=55,null=True)
     email = models.EmailField(default=True)
     Date = models.DateField(auto_now_add=True)
+    uid = models.TextField(null=True)
    

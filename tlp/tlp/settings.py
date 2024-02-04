@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'tlp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
@@ -100,14 +100,14 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '', 
-      'USER':'',
-      'PASSWORD':'',
-       'HOST': '',
+        'NAME': 'techleapbackend', 
+      'USER':'techleap-admin',
+      'PASSWORD':'mugumbyabenon',
+       'HOST': '34.28.3.163',
         'PORT': '5432',
     }
 }
-'''
+#'''
 
 
 # Password validation

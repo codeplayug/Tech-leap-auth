@@ -11,7 +11,7 @@ from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-JSON_FILE_PATH = os.path.join(BASE_DIR, "carloan-flutter-project-firebase-adminsdk-8qbzl-d27a6baec3.json")
+JSON_FILE_PATH = os.path.join(BASE_DIR, "sincere-sun-408508-firebase-adminsdk-hxdbg-17bf49217d.json")
 cred = credentials.Certificate(JSON_FILE_PATH)
 try:
  firebase_admin.initialize_app(cred)
