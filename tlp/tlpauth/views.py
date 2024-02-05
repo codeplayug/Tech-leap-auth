@@ -21,9 +21,16 @@ except Exception as e:
 
 
 
-@api_view()
+@api_view(['POST','GET'])
 @permission_classes([IsAuthenticated])
 def home(request):
+    print(request.data)
+    user = request.user
+    user.email=request.data['email']
+    user.dateOfBirth = request.data['dob']
+    user.first_name =request.data['fname']
+    user.last_name =request.data['lname']
+    user.save()
     return Response({'message':'Successful'})
 
 
