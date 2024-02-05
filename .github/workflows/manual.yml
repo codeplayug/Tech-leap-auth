@@ -19,6 +19,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
-        context: ./tlp/Dockerfile
+        context: ./tlp
+        file: ./tlp/Dockerfile
         push: true
         tags: mugumbyabenon/techleap-back:latest 
