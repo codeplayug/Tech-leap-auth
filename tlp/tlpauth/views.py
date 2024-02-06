@@ -26,6 +26,7 @@ except Exception as e:
 def home(request):
     print(request.data)
     user = request.user
+    user.username = request.data['fname'] +' '+request.data['lname']
     user.email=request.data['email']
     user.dateOfBirth = request.data['dob']
     user.first_name =request.data['fname']

@@ -86,7 +86,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tlp.wsgi.application'
 
-
+CSRF_TRUSTED_ORIGINS = ['https://techleap-back-frni755fda-uc.a.run.app','https://6315-41-210-146-229.ngrok-free.app']
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
